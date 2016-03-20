@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="MaxBotVisualizer" />
+		<Option makefile_is_custom="1" />
+		<Option execution_dir="/home/pi/Development/MaxBotVisualizer" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Option virtualFolders="build config/;" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/$(PROJECT_NAME)_debug" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-std=c++0x" />
+					<Add option="-g" />
+					<Add directory="/usr/local/lib" />
+					<Add directory="/usr/local/include" />
+					<Add directory="/home/pi/Development/max_bot/" />
+					<Add directory="/home/pi/of_v0.8.4_linuxarmv7l_release/libs/openFrameworks" />
+				</Compiler>
+				<Linker>
+					<Add option="-lwiringPi" />
+					<Add library="/usr/local/lib/libwiringPi.so" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/$(PROJECT_NAME)" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
+				<Compiler>
+					<Add option="-fexpensive-optimizations" />
+					<Add option="-Os" />
+					<Add option="-O3" />
+					<Add option="-std=c++0x" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-std=c++0x" />
+			<Add option="-Wfatal-errors" />
+		</Compiler>
+		<Linker>
+			<Add directory="/usr/local/lib" />
+			<Add directory="/usr/local/include" />
+			<Add directory="/usr/lib/boost_1_58_0" />
+		</Linker>
+		<Unit filename="config.make">
+			<Option virtualFolder="build config/" />
+		</Unit>
+		<Unit filename="src/IMUVisualizer.hpp" />
+		<Unit filename="src/main.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
