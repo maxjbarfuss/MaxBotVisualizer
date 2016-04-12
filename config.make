@@ -8,7 +8,7 @@
 #   The location of your root openFrameworks installation
 #       (default) OF_ROOT = ../../..
 ################################################################################
-OF_ROOT = /home/pi/of_v0.8.4_linuxarmv7l_release
+OF_ROOT = /home/pi/openFrameworks
 
 ################################################################################
 # PROJECT ROOT
@@ -37,7 +37,7 @@ PROJECT_ROOT = /home/pi/Development/MaxBotVisualizer/src
 #
 #   Note: Leave a leading space when adding list items with the += operator
 ################################################################################
-PROJECT_EXTERNAL_SOURCE_PATHS = /home/pi/Development/MaxBotVisualizer/src /home/pi/zeromq-4.1.3/include /home/pi/Development/MaxBotMessages/include
+PROJECT_EXTERNAL_SOURCE_PATHS = /home/pi/Development/MaxBotVisualizer/src /home/pi/zeromq-4.1.4/include /home/pi/Development/MaxBotMessages/include
 
 ################################################################################
 # PROJECT EXCLUSIONS
